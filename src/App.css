@@ -1,0 +1,143 @@
+.Body {
+    font-family: "Roboto Thin", monospace;
+    padding-block: 50px;
+    padding-inline: 200px;
+    text-align: center;
+    display: grid;
+    margin-block: 200px;
+    margin-inline: 500px;
+    grid-row-gap: 30px;
+    max-width: 500px;
+    min-width: 500px;
+    min-height: 360px;
+    max-height: 360px;
+    border-style: outset;
+    border-color: skyblue salmon;
+    box-shadow: inset 0 0 6px;
+    position: relative;
+}
+
+.h1 {
+    display: grid;
+    grid-gap: 14px;
+}
+
+.h2 {
+    display: grid;
+    grid-gap: 15px;
+}
+
+.h3 {
+    position: relative;
+    display: grid;
+    font-family: "Roboto Thin", monospace;
+    font-size: 13px;
+    border-color: white;
+    box-shadow: inset 0 0 1px;
+    height: 25px;
+}
+
+.h3 .text-field__input {
+    height: 25px;
+    padding-left: 10px;
+}
+
+.h3 .text-field__label {
+    position: absolute;
+    top: 55%;
+    left: 0.3125rem;
+    display: flex;
+    transform: translateY(-50%);
+    pointer-events: none;
+    border: none;
+    background-color: #fff;
+    color: #757575;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    transition: top 0.1s ease-in-out, scale 0.1s ease-in-out;
+}
+
+.h3 .text-field__input::-moz-placeholder {
+    color: transparent;
+}
+
+.h3 .text-field__input::placeholder {
+    color: transparent;
+}
+
+.h3 .text-field__input:focus ~ .text-field__label,
+
+.h3 .text-field__input:not(:placeholder-shown) ~ .text-field__label {
+    top: 0;
+    transform: translateY(-50%) scale(0.75);
+}
+
+.Error {
+    color: darkred;
+    text-align: left;
+    padding: 1px 10px;
+    text-decoration: dashed;
+}
+
+header {
+    background-color: #666666;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: rgba(255, 255, 255, 0.7) 0 3px 3px;
+    font-size: 22px;
+    margin-inline: 90px;
+}
+
+input {
+    font-family: "Roboto Thin", monospace;
+    padding: 1px 10px;
+    border-color: white;
+    box-shadow: inset 0 0 1px;
+    height: 25px;
+}
+
+input:focus {
+    border-color: skyblue;
+    outline: 0;
+}
+
+button:active {
+    background: rgba(250, 128, 114, 0.3);
+    box-shadow: 0 0 2px;
+}
+
+button {
+    margin: auto;
+    text-align: center;
+    font-family: "Roboto Thin", monospace;
+    width: 250px;
+    height: 30px;
+    color: black;
+    background: rgba(135, 206, 235, 0.3);
+    box-shadow: 0 0 2px;
+    border-color: rgba(250, 128, 114, 0.3);
+    font-size: 14px;
+}
+
+button:hover {
+    border-color: skyblue;
+}
+
+button:disabled {
+
+    background: rgba(250, 128, 114, 0.3);
+    color: rgba(22, 22, 22, 0.6);
+}
+
+a {
+    text-decoration: none;
+    background-color: #666666;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: rgba(255, 255, 255, 0.7) 0 3px 3px;
+    font-size: 15px;
+}
+
+a:hover {
+    color: skyblue;
+}
